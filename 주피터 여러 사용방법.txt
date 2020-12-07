@@ -1,0 +1,27 @@
+jupyter notebook --no-browser --port=8080 --ip=* python_daily
+                 브라우저 바로 실행안함, 포트지정,    외부에서접속가능하게, 접속할 폴더(프로젝트)  
+				 
+
+주피터 랩 설치
+ pip install jupyterlab
+
+실행방법
+ jupyter lab --no-browser --port=8080 --ip=* python_daily
+ 
+주피터 랩에서 깃허브 연결방법
+1. pip install jupyterlab_github  
+
+
+
+jupyter notebook kernel 생성방법
+
+1. conda create -n py27 python=2.7
+2. conda activate py27
+3. python --version
+4. pip install ipykernel (설치 안될시 버전을 다시 설치한다)
+5. python -m ipykernel install --user --name py27 --display-name 'python27'
+                                             ↓→콘다 생성시 이름             ↓→주피터노트북이나 랩에서 사용(지정)할 이름
+											 
+6. Installed kernelspec py27 in C:\Users\BIT-R39\AppData\Roaming\jupyter\kernels\py27 이런식으로 뜨면 성공
+7. jupyter kernelspec list 확인
+8. jupyter kernelspec uninstall py27 삭제방법
